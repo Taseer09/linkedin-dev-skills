@@ -29,12 +29,15 @@ copy-ready output, and temporary-preference cleanup. See TESTING.md for the
 initial failures, corrections, and limits. These were observed across runs;
 no automated full-workflow or exact-loaded-revision verification was performed.
 
-A profile-conflict case and a post-fix addition-log verification remain pending.
+The LF-003 trial shows the active preference and addition-log entry written
+together, and a contradictory proposal correctly left unsaved. No final
+readback is visible in that transcript; isolated LF-003 cleanup remains.
 Plugin-mode discovery is not claimed; project-local installation was exercised.
 The original eleven skills retain documented limitations. Owner release review
 and merge approval remain pending. No repeated core trial is necessary.
 
-Phase 5 is not complete until the relevant release gates are reviewed. The
+Planned Phase 5 functional checks have observed results and are ready for
+owner review with the documented limits. No repeat of the full trial is needed. The
 package remains a development preview; no tag, release, merge, or public launch
 was performed. This PR targets feature/feedback-memory and includes only Phase 5
 changes relative to that branch.
