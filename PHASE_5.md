@@ -21,12 +21,18 @@ All 14 skills passed the skill-creator format validator. git diff --check passed
 No host-Claude inference was run here. The plugin loader was not exercised.
 These checks do not prove model behavior, language quality, or package discovery.
 
-## Remaining user checks
+## User-supplied validation and remaining checks
 
-Run the package checker on Windows and the combined isolated-profile trial in
-TESTING.md. This resolves whether saved style is applied by li-project and then
-reviewed correctly by li-proof. The recent instruction refinements have not yet
-been observed in a live Claude trial. A profile-conflict case remains pending.
+The Windows package checker passed in the supplied screenshot. Claude transcripts
+show saved-style application in grounded drafts, final li-proof assessment with
+copy-ready output, and temporary-preference cleanup. See TESTING.md for the
+initial failures, corrections, and limits. These were observed across runs;
+no automated full-workflow or exact-loaded-revision verification was performed.
+
+A profile-conflict case and a post-fix addition-log verification remain pending.
+Plugin-mode discovery is not claimed; project-local installation was exercised.
+The original eleven skills retain documented limitations. Owner release review
+and merge approval remain pending. No repeated core trial is necessary.
 
 Phase 5 is not complete until the relevant release gates are reviewed. The
 package remains a development preview; no tag, release, merge, or public launch
