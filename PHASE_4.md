@@ -22,10 +22,26 @@ feature/feedback-memory builds on feature/claim-review. Its draft PR targets
 that branch so the Phase 4 additions can be reviewed separately. Nothing is
 merged or released by creating this branch.
 
-Skill-format validation and static review are the local checks. Live Claude
-proposal behavior, selective persistence, preservation of unrelated content,
-readback in a new session, and removal are pending. Start with the read-only
-fixture in examples.md, then use an isolated profile for the write trial.
+Skill-format validation passed and static review was performed. The following
+observations come from user-supplied Claude Code transcripts reviewed on
+2026-09-19, not direct inspection of the user's disk or loaded skill revision.
+
+| Trial | Observed result | Limit |
+| --- | --- | --- |
+| Proposal only | Tentative P1/P2/P3 suggestions and Not saved; speed-claim removal distinguished from style. | P2 mixed factual discipline with style; it was not approved. No independent no-write check. |
+| Selective save | Only P1 written as LF-001 to a new isolated profile and read back. | New-file creation does not test preserving existing content. |
+| Subsequent read | LF-001 returned from a file read after a fresh-session test was requested. | Session boundary not independently observed; initial empty page-range error recovered by retry. |
+| Removal | LF-001 removed, action log retained without deleted rule wording; unrelated paragraph added outside the managed section and present on readback. | Paragraph was added in the same edit as removal; this is narrower than preservation of an independently pre-existing profile. |
+
+The host reported leaving the default voice profile unchanged; this was not
+independently checked. No private profile or original user draft is committed.
+These observations support the core selective save/read/remove workflow in
+this fixture, not all persistence behavior.
+
+Remaining release checks include applying a saved preference in a later draft,
+preserving pre-existing unrelated content, conflict/stale-preview handling,
+revision, duplicate and missing-ID no-ops. Avoid repeating successful fixtures
+unless a change creates a concrete regression risk.
 
 ## Windows installation
 
