@@ -56,9 +56,13 @@ observe the installation or skill-loading trace.
 
 The follow-up instructions explicitly preserve negative facts and uncertainty,
 avoid invented personal opening context, and require separate fenced text blocks.
-These changes need a post-update model trial; do not count the earlier trials
-as validation of the revised version. Other acceptance cases remain untested.
-No independent verification of local file changes was performed.
+A third user-supplied transcript, after the refresh instructions, preserved
+'no benchmark has been run', kept roadmap features planned, left personal
+lessons pending, and asked for contribution details. The exact loaded skill
+revision was not independently observed. Fenced-block rendering remains
+unconfirmed from copied terminal text. Other acceptance cases remain untested.
+A user-supplied git status screenshot showed only an untracked .claude folder;
+no tracked modifications were shown at that point.
 
 ## Refresh an existing local installation
 
