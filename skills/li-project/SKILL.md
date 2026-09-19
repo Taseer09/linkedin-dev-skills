@@ -48,6 +48,9 @@ not an independently verified result. Attribute an unverified metric to its
 source with its limitations or omit it; do not promote it to an achieved fact.
 Use first person only for contributions or experiences the user has stated.
 Exclude unresolved claims from copy-ready text instead of inserting fake values.
+Preserve explicit negatives, uncertainty, and scope: 'no benchmark has been run'
+must not become 'no benchmark results are available'. Do not invent personal
+motivation or activity, such as 'I have been exploring', to make an opening warmer.
 
 ## Deliverable
 
@@ -69,7 +72,8 @@ Respect a requested angle, length, or number of drafts. By default provide:
    - Needs confirmation: unsupported, ambiguous, or conflicting; keep out of
      copy-ready drafts and list the question separately.
 
-Keep available drafts in separate copy-ready blocks. Use short paragraphs,
+Keep each available draft in its own fenced plain-text code block, not a
+blockquote. Put the angle label outside the fence. Use short paragraphs,
 distinct substance for each angle, and no filler to hit a length target.
 Place evidence notes outside copy blocks unless attribution must travel with
 the claim. End with **Drafts for review — not published** and any remaining
