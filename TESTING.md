@@ -106,3 +106,18 @@ workflow for source-grounded project content. Original skill examples and
 platform-performance assumptions have not received a full audit in this phase.
 Plugin-mode discovery and commands have not been exercised here. Individual
 project-local skills have been exercised through user-supplied transcripts.
+
+## Latest combined-trial follow-up
+
+The user supplied a transcript showing li-feedback loaded, LF-002 removed from
+the isolated profile, a 2026-09-20 removal log entry added, and readback confirming
+unrelated content and existing logs were preserved. The host reported no default
+profile access. This passes the observed cleanup step. The previously missing
+LF-002 addition entry was not fabricated during cleanup.
+
+The accompanying first block repeats the announcement and project source notes,
+ending 'Drafts for review — not published'. It does not establish a distinct
+li-proof review of this corrected draft; that specific step remains unconfirmed.
+Do not count cleanup or project source notes as proof-skill execution. No repeat
+save/draft/remove cycle is needed. Profile conflict handling remains a separate
+release check.
