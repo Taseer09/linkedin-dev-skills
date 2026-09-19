@@ -44,7 +44,41 @@ a real project instead, but remove secrets and provide your actual role.
 
 ## Validation status
 
-Frontmatter validation and static review can be performed here. A generated
-example is illustrative, not a live model evaluation. Claude execution and
-Windows installation require an environment that has those capabilities.
-Do not mark those checks passed until actual results are available.
+The skill-format validator passed for the initial version. Two user-supplied
+Claude Code transcripts were reviewed on 2026-09-19. They support successful
+use in the user's Windows / VS Code workflow; the reviewer did not directly
+observe the installation or skill-loading trace.
+
+| Trial | Observed result | Limits |
+| --- | --- | --- |
+| Complete fictional NotesIndex notes | Three angles, roadmap preserved, no invented metrics, fictional role distinguished from the user, evidence notes and missing voice profile disclosed. | Opening added unsupplied personal activity; fenced copy blocks were not apparent in the pasted transcript. |
+| No contribution or lessons supplied | Neutral project drafts, personal lesson pending, contributor question asked, no invented ownership or results. | 'No benchmark has been run' was weakened to results being unavailable in some prose. |
+
+The follow-up instructions explicitly preserve negative facts and uncertainty,
+avoid invented personal opening context, and require separate fenced text blocks.
+These changes need a post-update model trial; do not count the earlier trials
+as validation of the revised version. Other acceptance cases remain untested.
+No independent verification of local file changes was performed.
+
+## Refresh an existing local installation
+
+From the repository root, inspect local changes first:
+
+```powershell
+git status --short
+git branch --show-current
+```
+
+If tracked files have edits, pause and review them before pulling. Do not
+discard work. On feature/project-to-post, with no conflicting tracked edits:
+
+```powershell
+git pull --ff-only origin feature/project-to-post
+Copy-Item -Recurse -Force skills/li-project .claude/skills/
+```
+
+This replaces the installed copy of li-project with the updated version.
+Preserve any deliberate edits to that installation copy before replacing it.
+Restart Claude Code and repeat the missing-contribution trial. Check that
+'no benchmark has been run' retains its meaning, drafts use fenced blocks,
+and the personal lesson stays pending.
