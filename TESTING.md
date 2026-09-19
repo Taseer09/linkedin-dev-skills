@@ -11,7 +11,9 @@ python scripts/check_package.py
 Checks 14 skill entry points, JSON package consistency, local Markdown links,
 Python syntax, license credit, and executable smoke tests for the two inherited
 Python utilities. This is not a Claude behavioral evaluation or full JSON/YAML
-schema validation. Windows execution of this check remains to be confirmed.
+schema validation. A user-supplied Windows PowerShell screenshot shows a PASS
+on the phase-5-packaging checkout. The screenshot does not show the exact Python
+version or commit hash. The three local skill copies refreshed without errors.
 
 ## Observed manual trials
 
@@ -50,7 +52,7 @@ workflow; it does not prove perfect preference adherence across all outputs.
 
 - [ ] Combined trial above passes against the packaged revision.
 - [ ] Check preference conflict handling with an isolated existing profile.
-- [ ] Run package check on Windows and record the result.
+- [x] Run package check on Windows and record the result (user-supplied screenshot).
 - [ ] Confirm installation/discovery from the selected distribution method.
 - [ ] Review changed skills and known limitations; approve merge order.
 - [ ] Replace development version with the agreed release version and tag the
