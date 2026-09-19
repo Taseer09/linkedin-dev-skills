@@ -21,9 +21,21 @@ release. Phase 2 still has its own draft pull request against main.
 
 ## Validation
 
-Run the skill-format validator and inspect source links. The examples define
-manual behavior checks; they do not prove model compliance. A live Claude
-trial is pending. No accuracy percentage or verified badge is warranted.
+Skill-format validation passed. The first user-supplied Claude screenshot
+was reviewed on 2026-09-19. It flagged all five questionable claims, removed
+unsupported statements from replacement copy, kept semantic search planned,
+and explicitly disclaimed independent verification and publication.
+
+Two classification errors remain in that trial: prototype status was treated
+as contradicting production readiness, and absent benchmarks as contradicting
+actual speed. Both claims lack support, but the supplied facts alone do not
+disprove them. The evidence-basis column also omitted explicit basis labels.
+
+The instructions now contain concrete Unsupported-versus-Conflicting examples
+and explicitly require basis labels. Format validation passed after the edit;
+a live rerun of these corrections is pending. Fenced-block rendering is
+unconfirmed from the screenshot. Other cases remain untested; no accuracy
+percentage or verified badge is warranted.
 
 ## Windows trial
 
