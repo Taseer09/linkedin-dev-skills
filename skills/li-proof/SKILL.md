@@ -41,6 +41,18 @@ For each factual claim, record two distinct things:
 | Support | Supported: supplied material matches the claim and scope. Partial: supports only a narrower assertion. Unsupported: no supplied support. Conflicting: supplied sources disagree or contradict the draft. |
 | Basis | Documentation: a README or project notes assert it. User-reported: an explicit statement outside the draft reports personal experience or results. Evaluation record: supplied measurements with their stated conditions; authenticity and reproducibility are not assumed. None: no usable evidence. |
 
+Before assigning Conflicting, identify the actual incompatible propositions.
+Missing evidence alone means Unsupported. For example:
+- 'Production-ready' with only 'local prototype' supplied is Unsupported;
+  prototype status alone does not establish operational readiness either way.
+- '100x faster' with 'no benchmark has been run' is Unsupported; the absence
+  of measurement does not establish the actual speed. In contrast, 'benchmarks
+  prove 100x faster' conflicts with an explicit statement that none were run.
+- 'Semantic search is available' conflicts with an explicit statement that
+  it is planned and not yet implemented.
+Include the basis label (Documentation, User-reported, Evaluation record, or
+None) as well as a source locator; 'supplied evidence' alone is too vague.
+
 'Supported by documentation' does not mean independently verified. A project's
 own README repeating a performance boast is still documentation. State that
 limitation and require appropriate attribution or actual evaluation evidence.
