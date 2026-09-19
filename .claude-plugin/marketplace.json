@@ -1,18 +1,18 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "linkedin-agent-skill",
-  "description": "The LinkedIn agent skill pack for Claude",
+  "name": "linkedin-dev-skills-marketplace",
+  "description": "Developer edition of the LinkedIn skill pack",
   "owner": {
-    "name": "Jake Schincariol",
-    "url": "https://opusjake.ai"
+    "name": "Taseer09",
+    "url": "https://github.com/Taseer09"
   },
   "plugins": [
     {
-      "name": "linkedin-agent",
-      "description": "Eleven Claude skills that run a LinkedIn account, including a humanizer that strips the AI fingerprint and scores the draft on a five-check panel.",
+      "name": "linkedin-dev-skills",
+      "description": "Project drafts, claim review, approved writing preferences, and eleven inherited LinkedIn skills.",
       "source": "./",
       "category": "productivity",
-      "homepage": "https://opusjake.ai/r/linkedin-agent"
+      "homepage": "https://github.com/Taseer09/linkedin-dev-skills"
     }
   ]
 }

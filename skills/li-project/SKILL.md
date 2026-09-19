@@ -33,7 +33,12 @@ of filling the gap with a generic project story.
 
 ## Voice and factual boundaries
 
-Use ~/.claude/linkedin/voice.md if available, treating it as style guidance,
+Use an explicitly supplied voice-profile path for this invocation; otherwise
+use ~/.claude/linkedin/voice.md. Read only the selected profile and report if
+it cannot be read; do not silently fall back from an explicit test path to the
+global profile. Apply active preferences whose scopes match this draft,
+subject to the user's current instructions. Change-log entries and removed
+preferences are not active rules. Treat preferences as style guidance,
 not proof of achievements. Otherwise use clear, neutral language and say that
 personal style has not been configured. Writing samples are optional. Do not
 create or change the voice profile during this skill.
@@ -79,8 +84,8 @@ Place evidence notes outside copy blocks unless attribution must travel with
 the claim. End with **Drafts for review — not published** and any remaining
 questions. Do not publish, schedule, or record a draft as already posted.
 
-This source review is part of drafting; the separate li-proof feature is not
-implemented yet. Do not claim to have invoked it.
+This source review is part of drafting. The separate li-proof skill can review
+an existing draft when requested; do not claim to have invoked it unless you did.
 
 For concrete examples and behavioral review cases, read [examples.md](examples.md)
 when needed.
