@@ -90,8 +90,12 @@ ambiguity. If a target is a symlink or not a regular text file, explain and
 resolve the intended destination before writing.
 
 Use a targeted edit or atomic replacement after checking current contents;
-avoid partial writes. Read back the result and confirm only approved entries
-changed. If writing fails, report failure and any observed partial state; do
+avoid partial writes. For every successful add, revision, or removal, update
+the active entry and its dated action-log entry together in the same edit.
+Read back and verify both the intended active state and the matching new log
+entry, as well as preservation of unrelated content. Do not report fully
+verified if the log entry is missing; report the partial result instead.
+Do not invent historical dates when repairing an earlier missing log. If writing fails, report failure and any observed partial state; do
 not claim saved or repeat writes blindly. Do not create backup copies of
 private drafts or preferences without a user request.
 
