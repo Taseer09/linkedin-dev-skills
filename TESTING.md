@@ -48,6 +48,15 @@ ordinary audience framing is not itself a product guarantee. LF-002 still
 needs test cleanup. This trial supports detecting the privacy error, not full
 combined-workflow completion.
 
+A later user-supplied li-project transcript shows the corrected draft opening
+'What if Markdown notes could be searched from a Python CLI?' and retaining
+only documented functionality, roadmap status, and no-benchmark wording.
+No privacy guarantees, authorship, or performance results were added. This
+passes the targeted saved-preference plus factual-grounding check on the
+observed output; the loaded revision was not independently inspected.
+Review of this exact corrected draft and temporary LF-002 cleanup remain.
+Fenced-block rendering is still unconfirmed from copied terminal text.
+
 ## Combined trial procedure
 
 Install the three current developer skills. Use this isolated profile:
