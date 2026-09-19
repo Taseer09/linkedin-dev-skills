@@ -38,8 +38,15 @@ addition, with no matching LF-002 action-log addition visible.
 
 The instructions now explicitly check factual implications in hooks/privacy
 claims and require active-state plus dated-log verification in the same edit.
-Those fixes need a targeted live check. The actual draft should be reviewed
-with li-proof against the original notes. LF-002 still needs test cleanup.
+The drafting and action-log fixes need a targeted live check. A subsequent
+user-supplied li-proof transcript correctly marked both privacy guarantees
+Unsupported and the documented functionality/status Supported. It retained the
+no-benchmark meaning and made no independent-verification claim. It omitted
+the corrected draft normally requested by the skill; this output-completeness
+issue remains. Its additional criticism of 'your own notes' was overly strict:
+ordinary audience framing is not itself a product guarantee. LF-002 still
+needs test cleanup. This trial supports detecting the privacy error, not full
+combined-workflow completion.
 
 ## Combined trial procedure
 
