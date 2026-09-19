@@ -42,14 +42,17 @@ recur in this explicit-output trial.
 
 Cleanup removed LF-002 and logged removal on 2026-09-20 while preserving the
 unrelated paragraph and existing logs. The initial LF-002 save had omitted
-an addition-log entry; the revised instructions require verifying it, but a
-post-fix addition with logging has not yet been observed. Historical log entries
+an addition-log entry. A subsequent user-supplied edit diff shows LF-003 and
+its dated addition-log entry written together after the fix. Historical log entries
 were not fabricated during cleanup. No repeat of the whole workflow is needed.
 
 Remaining quality limits: source sentence numbers in the final proof table
 were shifted for some claims even though assessments were sound. Fenced-block
-rendering is unconfirmed in copied terminal text. Profile conflict handling
-remains a separate test. This result is not a general accuracy guarantee.
+rendering is unconfirmed in copied terminal text. The LF-003 trial correctly
+left a contradictory question-opening proposal unsaved and explained the
+same-scope conflict. The diff shows both rule and log writes; a post-edit
+readback is not visible in that particular transcript. LF-003 remains active
+only in the isolated test profile until cleanup. This result is not a general accuracy guarantee.
 
 ## Combined trial procedure
 
@@ -79,7 +82,7 @@ workflow; it does not prove perfect preference adherence across all outputs.
 ## Before release
 
 - [x] Core save/draft/review/remove sequence observed through user-supplied transcripts; limits above.
-- [ ] Check preference conflict handling with an isolated existing profile.
+- [x] Conflict detected and contradictory proposal left unsaved in the LF-003 trial.
 - [x] Run package check on Windows and record the result (user-supplied screenshot).
 - [x] Project-local skill installation/discovery observed in user trials; plugin mode remains untested.
 - [ ] Review changed skills and known limitations; approve merge order.
