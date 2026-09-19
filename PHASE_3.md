@@ -33,9 +33,15 @@ disprove them. The evidence-basis column also omitted explicit basis labels.
 
 The instructions now contain concrete Unsupported-versus-Conflicting examples
 and explicitly require basis labels. Format validation passed after the edit;
-a live rerun of these corrections is pending. Fenced-block rendering is
-unconfirmed from the screenshot. Other cases remain untested; no accuracy
-percentage or verified badge is warranted.
+a second user-supplied Claude screenshot shows the intended classifications:
+authorship, production readiness, adoption, and speed are Unsupported;
+available semantic search is Conflicting. Explicit Documentation/None basis
+labels are present. Replacement copy stays grounded in keyword search and
+planned semantic search, and the response disclaims independent verification.
+This targeted classification rerun passes on the observed output. The exact
+loaded revision was not independently observed. Fenced-block rendering remains
+unconfirmed from the screenshot. Other cases remain untested; this is not a
+claim of full release readiness or an accuracy percentage.
 
 ## Windows trial
 
