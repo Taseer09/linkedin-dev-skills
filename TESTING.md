@@ -23,39 +23,33 @@ preference save, file readback, and removal. See PHASE_2.md, PHASE_3.md, and
 PHASE_4.md for exact limitations. Never turn those observations into an accuracy
 percentage or claim that every edge case passes.
 
-## Combined trial — partial result
+## Combined trial — core sequence observed
 
-User-supplied transcripts show LF-002 saved to the isolated profile, followed
-by li-project reading that profile, ignoring removed LF-001, and opening with
-a question. This supports preference propagation on the observed trial.
+User-supplied Claude transcripts show an approved synthetic LF-002 preference
+saved in the isolated profile, li-project reading and applying it, li-proof
+reviewing the resulting corrected draft and returning copy-ready text, and
+li-feedback removing the preference with a dated log entry and readback.
+The steps were observed across several runs, not a single automated evaluation.
+The exact loaded revisions and session boundaries were not independently verified.
 
-The generated question and body added unsupported privacy guarantees:
-'without sending them anywhere' and 'Everything stays on your machine'.
-Local prototype/SQLite notes do not establish network behavior. Source notes
-also omitted these claims. This is a factual-grounding failure, so the combined
-trial has not passed overall. The save diff shows only an active preference
-addition, with no matching LF-002 action-log addition visible.
+Initial drafting added unsupported privacy guarantees. After clarification,
+the draft opened 'What if Markdown notes could be searched from a Python CLI?'
+and retained only supplied functionality, planned semantic search, and
+'No benchmark has been run'. The final transcript explicitly shows li-proof
+loaded, those claims classified Supported by Documentation, no ownership claim,
+and the final copy-ready draft. Earlier omission of corrected copy did not
+recur in this explicit-output trial.
 
-The instructions now explicitly check factual implications in hooks/privacy
-claims and require active-state plus dated-log verification in the same edit.
-The drafting and action-log fixes need a targeted live check. A subsequent
-user-supplied li-proof transcript correctly marked both privacy guarantees
-Unsupported and the documented functionality/status Supported. It retained the
-no-benchmark meaning and made no independent-verification claim. It omitted
-the corrected draft normally requested by the skill; this output-completeness
-issue remains. Its additional criticism of 'your own notes' was overly strict:
-ordinary audience framing is not itself a product guarantee. LF-002 still
-needs test cleanup. This trial supports detecting the privacy error, not full
-combined-workflow completion.
+Cleanup removed LF-002 and logged removal on 2026-09-20 while preserving the
+unrelated paragraph and existing logs. The initial LF-002 save had omitted
+an addition-log entry; the revised instructions require verifying it, but a
+post-fix addition with logging has not yet been observed. Historical log entries
+were not fabricated during cleanup. No repeat of the whole workflow is needed.
 
-A later user-supplied li-project transcript shows the corrected draft opening
-'What if Markdown notes could be searched from a Python CLI?' and retaining
-only documented functionality, roadmap status, and no-benchmark wording.
-No privacy guarantees, authorship, or performance results were added. This
-passes the targeted saved-preference plus factual-grounding check on the
-observed output; the loaded revision was not independently inspected.
-Review of this exact corrected draft and temporary LF-002 cleanup remain.
-Fenced-block rendering is still unconfirmed from copied terminal text.
+Remaining quality limits: source sentence numbers in the final proof table
+were shifted for some claims even though assessments were sound. Fenced-block
+rendering is unconfirmed in copied terminal text. Profile conflict handling
+remains a separate test. This result is not a general accuracy guarantee.
 
 ## Combined trial procedure
 
@@ -84,10 +78,10 @@ workflow; it does not prove perfect preference adherence across all outputs.
 
 ## Before release
 
-- [ ] Combined trial above passes against the packaged revision.
+- [x] Core save/draft/review/remove sequence observed through user-supplied transcripts; limits above.
 - [ ] Check preference conflict handling with an isolated existing profile.
 - [x] Run package check on Windows and record the result (user-supplied screenshot).
-- [ ] Confirm installation/discovery from the selected distribution method.
+- [x] Project-local skill installation/discovery observed in user trials; plugin mode remains untested.
 - [ ] Review changed skills and known limitations; approve merge order.
 - [ ] Replace development version with the agreed release version and tag the
       reviewed commit only after owner approval.
@@ -106,18 +100,3 @@ workflow for source-grounded project content. Original skill examples and
 platform-performance assumptions have not received a full audit in this phase.
 Plugin-mode discovery and commands have not been exercised here. Individual
 project-local skills have been exercised through user-supplied transcripts.
-
-## Latest combined-trial follow-up
-
-The user supplied a transcript showing li-feedback loaded, LF-002 removed from
-the isolated profile, a 2026-09-20 removal log entry added, and readback confirming
-unrelated content and existing logs were preserved. The host reported no default
-profile access. This passes the observed cleanup step. The previously missing
-LF-002 addition entry was not fabricated during cleanup.
-
-The accompanying first block repeats the announcement and project source notes,
-ending 'Drafts for review — not published'. It does not establish a distinct
-li-proof review of this corrected draft; that specific step remains unconfirmed.
-Do not count cleanup or project source notes as proof-skill execution. No repeat
-save/draft/remove cycle is needed. Profile conflict handling remains a separate
-release check.
