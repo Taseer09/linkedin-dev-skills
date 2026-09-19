@@ -65,7 +65,8 @@ def main():
     require(score['verdict'] in {'PASS', 'REVIEW', 'FLAGGED'}, 'Invalid scorer verdict')
     require(0 <= score['human_score'] <= 100, 'Invalid score range')
     print('PASS: 14 skills, package metadata, local links, Python syntax, credit, and CLI smoke checks.')
-    print('Not tested: Claude behavior, Windows execution, or plugin discovery.')
+    print(f'Executed on: {sys.platform}, Python {sys.version.split()[0]}')
+    print('Outside this check: Claude behavior and plugin discovery.')
 
 
 if __name__ == '__main__':
