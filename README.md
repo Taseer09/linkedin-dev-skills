@@ -3,7 +3,7 @@
 Turn project notes into LinkedIn drafts, review their claims against supplied
 evidence, and save writing preferences you explicitly approve.
 
-**Development preview: 0.1.0-dev.** Fourteen Claude skills: three additions to
+**Version 0.1.0 — prepared for release; publication pending.** Fourteen Claude skills: three additions to
 Jake Schincariol's original eleven. Not yet a tagged release. The host assistant
 generates text and handles approved local preference edits. No model training
 or LinkedIn connection is required; Claude's normal usage limits still apply.
@@ -27,10 +27,11 @@ Preferences guide style, not personal achievements. Keep profiles out of Git.
 
 ## Install the three additions in Claude Code
 
-For this development preview, clone the packaging branch:
+After the release changes are merged, clone `main` with the commands below.
+Before merge, reviewers should use `--branch phase-5-packaging` instead.
 
 ```powershell
-git clone --branch phase-5-packaging https://github.com/Taseer09/linkedin-dev-skills.git
+git clone --branch main https://github.com/Taseer09/linkedin-dev-skills.git
 cd linkedin-dev-skills
 New-Item -ItemType Directory -Force .claude/skills | Out-Null
 foreach ($skillName in 'li-project','li-proof','li-feedback') {
@@ -39,7 +40,7 @@ foreach ($skillName in 'li-project','li-proof','li-feedback') {
 ```
 
 If already cloned, inspect `git status --short`, fetch origin, and switch to
-`phase-5-packaging` before copying. Preserve deliberate edits in installed
+`main` after merge (or `phase-5-packaging` for pre-merge review) before copying. Preserve deliberate edits in installed
 copies before replacing them. Generated local copies are ignored by Git.
 Restart Claude in this folder and invoke `/li-project`, `/li-proof`, or
 `/li-feedback`. If a command is missing, confirm its file exists at

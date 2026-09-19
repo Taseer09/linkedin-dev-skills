@@ -86,12 +86,13 @@ workflow; it does not prove perfect preference adherence across all outputs.
 - [x] Run package check on Windows and record the result (user-supplied screenshot).
 - [x] Project-local skill installation/discovery observed in user trials; plugin mode remains untested.
 - [ ] Review changed skills and known limitations; approve merge order.
-- [ ] Replace development version with the agreed release version and tag the
-      reviewed commit only after owner approval.
+- [x] Prepare 0.1.0 package metadata for owner review; this does not publish a release.
+- [ ] Tag the reviewed merge commit and publish only after owner approval.
 
-Draft PRs are stacked: Phase 2 targets main, Phase 3 targets Phase 2, Phase 4
-targets Phase 3, and Phase 5 targets Phase 4. Review them together before choosing
-the merge strategy; do not assume merging one publishes all later branches.
+The release review consolidates the full change set in PR #4 targeting main.
+PRs #1–#3 are earlier staged views and should not be merged separately once
+PR #4 is merged. Preserve history and close superseded reviews after verifying
+the combined merge. See RELEASE_NOTES.md for the proposed publication plan.
 
 ## Known inherited limitations
 

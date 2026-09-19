@@ -1,7 +1,7 @@
 {
   "name": "linkedin-dev-skills",
   "description": "Fourteen LinkedIn skills, including project drafts, evidence review, and approved writing preferences.",
-  "version": "0.1.0-dev",
+  "version": "0.1.0",
   "author": {
     "name": "Taseer09",
     "url": "https://github.com/Taseer09"
