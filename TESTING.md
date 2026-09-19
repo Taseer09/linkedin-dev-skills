@@ -23,7 +23,25 @@ preference save, file readback, and removal. See PHASE_2.md, PHASE_3.md, and
 PHASE_4.md for exact limitations. Never turn those observations into an accuracy
 percentage or claim that every edge case passes.
 
-## Combined trial — pending
+## Combined trial — partial result
+
+User-supplied transcripts show LF-002 saved to the isolated profile, followed
+by li-project reading that profile, ignoring removed LF-001, and opening with
+a question. This supports preference propagation on the observed trial.
+
+The generated question and body added unsupported privacy guarantees:
+'without sending them anywhere' and 'Everything stays on your machine'.
+Local prototype/SQLite notes do not establish network behavior. Source notes
+also omitted these claims. This is a factual-grounding failure, so the combined
+trial has not passed overall. The save diff shows only an active preference
+addition, with no matching LF-002 action-log addition visible.
+
+The instructions now explicitly check factual implications in hooks/privacy
+claims and require active-state plus dated-log verification in the same edit.
+Those fixes need a targeted live check. The actual draft should be reviewed
+with li-proof against the original notes. LF-002 still needs test cleanup.
+
+## Combined trial procedure
 
 Install the three current developer skills. Use this isolated profile:
 `D:\linkedin-agent\li-feedback-test\voice.md`. If the path already has an
