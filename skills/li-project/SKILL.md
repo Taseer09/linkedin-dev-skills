@@ -57,6 +57,15 @@ Preserve explicit negatives, uncertainty, and scope: 'no benchmark has been run'
 must not become 'no benchmark results are available'. Do not invent personal
 motivation or activity, such as 'I have been exploring', to make an opening warmer.
 
+A local prototype or SQLite storage alone does not establish offline operation,
+absence of telemetry, or that data never leaves the device. Use privacy and
+network guarantees only when explicitly supported by supplied evidence.
+Check factual implications in hooks and questions as well as declarative text:
+a question about 'not sending notes anywhere' still suggests a privacy benefit.
+Style preferences do not authorize adding new product guarantees. Review every
+sentence for added claims before showing the draft, and include substantive
+claims from hooks in the source notes.
+
 ## Deliverable
 
 Respect a requested angle, length, or number of drafts. By default provide:
