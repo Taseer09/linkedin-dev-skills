@@ -1,6 +1,7 @@
 # LinkedIn Dev Skills v0.1.0
 
-Prepared release notes. No tag or GitHub Release has been created yet.
+Published September 20, 2026: [GitHub Release v0.1.0](https://github.com/Taseer09/linkedin-dev-skills/releases/tag/v0.1.0).
+The tag points to reviewed merge commit `8f35c6c77acd3cb2f61dbf86e17a66d62575d8c4`.
 
 ## What this first developer edition adds
 
@@ -18,8 +19,8 @@ notice are preserved. This fork uses its own version sequence.
 
 ## Installation
 
-Use the project-local instructions in [README.md](README.md) after merging the
-release changes. Before merge, use the phase-5-packaging branch for review.
+Use the project-local instructions in [README.md](README.md). Clone `main`
+for the current version, or tag `v0.1.0` for the exact published snapshot.
 Claude Code is the tested host. No LinkedIn connection, model training, or
 separate API key is needed by the three new skills; normal Claude usage applies.
 They use pasted source material and manual publishing. The package checker and
@@ -45,17 +46,13 @@ inherited Python utilities require Python; the new Markdown skills do not.
 
 Full observations and limitations are in [TESTING.md](TESTING.md).
 
-## Proposed merge and publication plan
+## Publication status
 
-1. Owner reviews the combined PR #4 against main and approves the merge.
-2. Recheck the current PR head and mergeability. Merge once, preserving the
-   feature history; do not also merge staged PRs #1–#3 independently.
-3. Verify main contains the approved tree and run package checks on that state.
-4. Close superseded staged PRs after verifying their changes are included.
-5. With publication approval, finalize the release date/status, tag the reviewed
-   release commit as v0.1.0, and use the release notes above for GitHub Release.
-6. Share a community announcement only with the owner's explicit approval of
-   the text and destination. No community post is sent by this preparation.
+- Combined PR #4 was merged after owner approval; the merged tree was verified
+  and package checks passed. Superseded staged PRs are closed or merged.
+- The owner published GitHub Release v0.1.0 on September 20, 2026.
+- Community sharing remains pending approval of the text and destination.
+  The announcement below is a draft and has not been posted to a community.
 
 The isolated LF-003 test preference is user-local and not included in this
 repository. Its cleanup was requested but not confirmed; it is not a source
