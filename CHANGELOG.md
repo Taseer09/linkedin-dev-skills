@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.1.0 — prepared, release date pending
+## 0.1.0 — 2026-09-20
 
 - Add li-project for supplied project notes to grounded LinkedIn drafts.
 - Add li-proof for claim review against supplied evidence.
